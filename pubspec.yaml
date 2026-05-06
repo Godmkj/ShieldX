@@ -1,0 +1,93 @@
+name: shieldx
+description: "ShieldX - World's #1 Open-Source Digital Security Suite. Zero Data Collection · Zero Logs · Zero Compromise · Free Forever"
+publish_to: 'none'
+
+version: 0.1.0+1
+
+author:
+  name: MONISH K JAYAN
+  email: monishkjayan71@gmail.com
+
+repository: https://github.com/Godmkj/ShieldX
+homepage: https://github.com/Godmkj/ShieldX
+issue_tracker: https://github.com/Godmkj/ShieldX/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management & Reactive Programming
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+  hooks_riverpod: ^2.4.0
+
+  # Navigation & Routing
+  go_router: ^12.0.0
+
+  # Local Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  isar: ^3.1.0+1
+
+  # Encryption & Security
+  encrypt: ^4.0.1
+  cryptography: ^2.1.0
+  pointycastle: ^3.9.0
+
+  # HTTP & Networking
+  dio: ^5.3.1
+  raw_socket: ^0.4.1
+
+  # Notifications
+  flutter_local_notifications: ^15.1.0
+
+  # Permissions
+  permission_handler: ^11.4.4
+
+  # File Management
+  path_provider: ^2.1.1
+  file_picker: ^6.1.1
+
+  # UI Components
+  flutter_animate: ^4.2.0
+  glassmorphism: ^3.0.0
+  flutter_svg: ^2.0.10
+
+  # Utilities
+  json_serializable: ^6.7.1
+  freezed_annotation: ^2.4.1
+  get_it: ^7.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.6
+  hive_generator: ^2.0.1
+  freezed: ^2.4.1
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - signatures/
+    - yara_rules/
+
+  fonts:
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
